@@ -1,6 +1,6 @@
   Conversion of estimated PM2.5 to American AQI
 
-  (PM μg/m³) 	AQI
+  (PM μg/m³) 		AQI
   1 			4.17 good
   2 			8.33 good
   3 			12.50 good

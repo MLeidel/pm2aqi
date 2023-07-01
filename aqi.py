@@ -29,7 +29,7 @@ AQIcats = {  # AQI ranges
 }
 
 print("  Conversion of estimated PM2.5 to American AQI\n")
-print("  (PM μg/m³)", "\tAQI")
+print("  (PM μg/m³)", "\t\tAQI")
 
 for Cp in range(1, 330):
     # find the correct category using the given PM μg/m³ value Cp
