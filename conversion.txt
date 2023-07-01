@@ -1,0 +1,333 @@
+  Conversion of estimated PM2.5 to American AQI
+
+  (PM μg/m³) 	AQI
+  1 			4.17 good
+  2 			8.33 good
+  3 			12.50 good
+  4 			16.67 good
+  5 			20.83 good
+  6 			25.00 good
+  7 			29.17 good
+  8 			33.33 good
+  9 			37.50 good
+  10 			41.67 good
+  11 			45.83 good
+  12 			50.79 moderate
+  13 			52.89 moderate
+  14 			55.00 moderate
+  15 			57.10 moderate
+  16 			59.20 moderate
+  17 			61.30 moderate
+  18 			63.41 moderate
+  19 			65.51 moderate
+  20 			67.61 moderate
+  21 			69.72 moderate
+  22 			71.82 moderate
+  23 			73.92 moderate
+  24 			76.03 moderate
+  25 			78.13 moderate
+  26 			80.23 moderate
+  27 			82.33 moderate
+  28 			84.44 moderate
+  29 			86.54 moderate
+  30 			88.64 moderate
+  31 			90.75 moderate
+  32 			92.85 moderate
+  33 			94.95 moderate
+  34 			97.06 moderate
+  35 			99.16 moderate
+  36 			102.23 sensitive groups
+  37 			104.69 sensitive groups
+  38 			107.16 sensitive groups
+  39 			109.62 sensitive groups
+  40 			112.08 sensitive groups
+  41 			114.54 sensitive groups
+  42 			117.01 sensitive groups
+  43 			119.47 sensitive groups
+  44 			121.93 sensitive groups
+  45 			124.39 sensitive groups
+  46 			126.85 sensitive groups
+  47 			129.32 sensitive groups
+  48 			131.78 sensitive groups
+  49 			134.24 sensitive groups
+  50 			136.70 sensitive groups
+  51 			139.17 sensitive groups
+  52 			141.63 sensitive groups
+  53 			144.09 sensitive groups
+  54 			146.55 sensitive groups
+  55 			149.02 sensitive groups
+  56 			151.26 unhealthy
+  57 			151.77 unhealthy
+  58 			152.29 unhealthy
+  59 			152.81 unhealthy
+  60 			153.32 unhealthy
+  61 			153.84 unhealthy
+  62 			154.36 unhealthy
+  63 			154.87 unhealthy
+  64 			155.39 unhealthy
+  65 			155.91 unhealthy
+  66 			156.42 unhealthy
+  67 			156.94 unhealthy
+  68 			157.45 unhealthy
+  69 			157.97 unhealthy
+  70 			158.49 unhealthy
+  71 			159.00 unhealthy
+  72 			159.52 unhealthy
+  73 			160.04 unhealthy
+  74 			160.55 unhealthy
+  75 			161.07 unhealthy
+  76 			161.58 unhealthy
+  77 			162.10 unhealthy
+  78 			162.62 unhealthy
+  79 			163.13 unhealthy
+  80 			163.65 unhealthy
+  81 			164.17 unhealthy
+  82 			164.68 unhealthy
+  83 			165.20 unhealthy
+  84 			165.72 unhealthy
+  85 			166.23 unhealthy
+  86 			166.75 unhealthy
+  87 			167.26 unhealthy
+  88 			167.78 unhealthy
+  89 			168.30 unhealthy
+  90 			168.81 unhealthy
+  91 			169.33 unhealthy
+  92 			169.85 unhealthy
+  93 			170.36 unhealthy
+  94 			170.88 unhealthy
+  95 			171.40 unhealthy
+  96 			171.91 unhealthy
+  97 			172.43 unhealthy
+  98 			172.94 unhealthy
+  99 			173.46 unhealthy
+  100 			173.98 unhealthy
+  101 			174.49 unhealthy
+  102 			175.01 unhealthy
+  103 			175.53 unhealthy
+  104 			176.04 unhealthy
+  105 			176.56 unhealthy
+  106 			177.07 unhealthy
+  107 			177.59 unhealthy
+  108 			178.11 unhealthy
+  109 			178.62 unhealthy
+  110 			179.14 unhealthy
+  111 			179.66 unhealthy
+  112 			180.17 unhealthy
+  113 			180.69 unhealthy
+  114 			181.21 unhealthy
+  115 			181.72 unhealthy
+  116 			182.24 unhealthy
+  117 			182.75 unhealthy
+  118 			183.27 unhealthy
+  119 			183.79 unhealthy
+  120 			184.30 unhealthy
+  121 			184.82 unhealthy
+  122 			185.34 unhealthy
+  123 			185.85 unhealthy
+  124 			186.37 unhealthy
+  125 			186.89 unhealthy
+  126 			187.40 unhealthy
+  127 			187.92 unhealthy
+  128 			188.43 unhealthy
+  129 			188.95 unhealthy
+  130 			189.47 unhealthy
+  131 			189.98 unhealthy
+  132 			190.50 unhealthy
+  133 			191.02 unhealthy
+  134 			191.53 unhealthy
+  135 			192.05 unhealthy
+  136 			192.56 unhealthy
+  137 			193.08 unhealthy
+  138 			193.60 unhealthy
+  139 			194.11 unhealthy
+  140 			194.63 unhealthy
+  141 			195.15 unhealthy
+  142 			195.66 unhealthy
+  143 			196.18 unhealthy
+  144 			196.70 unhealthy
+  145 			197.21 unhealthy
+  146 			197.73 unhealthy
+  147 			198.24 unhealthy
+  148 			198.76 unhealthy
+  149 			199.28 unhealthy
+  150 			199.79 unhealthy
+  151 			201.25 very unhealthy
+  152 			201.74 very unhealthy
+  153 			202.23 very unhealthy
+  154 			202.72 very unhealthy
+  155 			203.21 very unhealthy
+  156 			203.70 very unhealthy
+  157 			204.19 very unhealthy
+  158 			204.68 very unhealthy
+  159 			205.17 very unhealthy
+  160 			205.66 very unhealthy
+  161 			206.15 very unhealthy
+  162 			206.64 very unhealthy
+  163 			207.13 very unhealthy
+  164 			207.62 very unhealthy
+  165 			208.11 very unhealthy
+  166 			208.60 very unhealthy
+  167 			209.09 very unhealthy
+  168 			209.58 very unhealthy
+  169 			210.07 very unhealthy
+  170 			210.56 very unhealthy
+  171 			211.06 very unhealthy
+  172 			211.55 very unhealthy
+  173 			212.04 very unhealthy
+  174 			212.53 very unhealthy
+  175 			213.02 very unhealthy
+  176 			213.51 very unhealthy
+  177 			214.00 very unhealthy
+  178 			214.49 very unhealthy
+  179 			214.98 very unhealthy
+  180 			215.47 very unhealthy
+  181 			215.96 very unhealthy
+  182 			216.45 very unhealthy
+  183 			216.94 very unhealthy
+  184 			217.43 very unhealthy
+  185 			217.92 very unhealthy
+  186 			218.41 very unhealthy
+  187 			218.90 very unhealthy
+  188 			219.39 very unhealthy
+  189 			219.88 very unhealthy
+  190 			220.37 very unhealthy
+  191 			220.86 very unhealthy
+  192 			221.36 very unhealthy
+  193 			221.85 very unhealthy
+  194 			222.34 very unhealthy
+  195 			222.83 very unhealthy
+  196 			223.32 very unhealthy
+  197 			223.81 very unhealthy
+  198 			224.30 very unhealthy
+  199 			224.79 very unhealthy
+  200 			225.28 very unhealthy
+  201 			225.77 very unhealthy
+  202 			226.26 very unhealthy
+  203 			226.75 very unhealthy
+  204 			227.24 very unhealthy
+  205 			227.73 very unhealthy
+  206 			228.22 very unhealthy
+  207 			228.71 very unhealthy
+  208 			229.20 very unhealthy
+  209 			229.69 very unhealthy
+  210 			230.18 very unhealthy
+  211 			230.67 very unhealthy
+  212 			231.17 very unhealthy
+  213 			231.66 very unhealthy
+  214 			232.15 very unhealthy
+  215 			232.64 very unhealthy
+  216 			233.13 very unhealthy
+  217 			233.62 very unhealthy
+  218 			234.11 very unhealthy
+  219 			234.60 very unhealthy
+  220 			235.09 very unhealthy
+  221 			235.58 very unhealthy
+  222 			236.07 very unhealthy
+  223 			236.56 very unhealthy
+  224 			237.05 very unhealthy
+  225 			237.54 very unhealthy
+  226 			238.03 very unhealthy
+  227 			238.52 very unhealthy
+  228 			239.01 very unhealthy
+  229 			239.50 very unhealthy
+  230 			239.99 very unhealthy
+  231 			240.48 very unhealthy
+  232 			240.97 very unhealthy
+  233 			241.47 very unhealthy
+  234 			241.96 very unhealthy
+  235 			242.45 very unhealthy
+  236 			242.94 very unhealthy
+  237 			243.43 very unhealthy
+  238 			243.92 very unhealthy
+  239 			244.41 very unhealthy
+  240 			244.90 very unhealthy
+  241 			245.39 very unhealthy
+  242 			245.88 very unhealthy
+  243 			246.37 very unhealthy
+  244 			246.86 very unhealthy
+  245 			247.35 very unhealthy
+  246 			247.84 very unhealthy
+  247 			248.33 very unhealthy
+  248 			248.82 very unhealthy
+  249 			249.31 very unhealthy
+  250 			249.80 very unhealthy
+  251 			251.10 hazerdous
+  252 			251.29 hazerdous
+  253 			251.49 hazerdous
+  254 			251.69 hazerdous
+  255 			251.88 hazerdous
+  256 			252.08 hazerdous
+  257 			252.28 hazerdous
+  258 			252.47 hazerdous
+  259 			252.67 hazerdous
+  260 			252.87 hazerdous
+  261 			253.06 hazerdous
+  262 			253.26 hazerdous
+  263 			253.45 hazerdous
+  264 			253.65 hazerdous
+  265 			253.85 hazerdous
+  266 			254.04 hazerdous
+  267 			254.24 hazerdous
+  268 			254.44 hazerdous
+  269 			254.63 hazerdous
+  270 			254.83 hazerdous
+  271 			255.03 hazerdous
+  272 			255.22 hazerdous
+  273 			255.42 hazerdous
+  274 			255.62 hazerdous
+  275 			255.81 hazerdous
+  276 			256.01 hazerdous
+  277 			256.20 hazerdous
+  278 			256.40 hazerdous
+  279 			256.60 hazerdous
+  280 			256.79 hazerdous
+  281 			256.99 hazerdous
+  282 			257.19 hazerdous
+  283 			257.38 hazerdous
+  284 			257.58 hazerdous
+  285 			257.78 hazerdous
+  286 			257.97 hazerdous
+  287 			258.17 hazerdous
+  288 			258.36 hazerdous
+  289 			258.56 hazerdous
+  290 			258.76 hazerdous
+  291 			258.95 hazerdous
+  292 			259.15 hazerdous
+  293 			259.35 hazerdous
+  294 			259.54 hazerdous
+  295 			259.74 hazerdous
+  296 			259.94 hazerdous
+  297 			260.13 hazerdous
+  298 			260.33 hazerdous
+  299 			260.53 hazerdous
+  300 			260.72 hazerdous
+  301 			260.92 hazerdous
+  302 			261.11 hazerdous
+  303 			261.31 hazerdous
+  304 			261.51 hazerdous
+  305 			261.70 hazerdous
+  306 			261.90 hazerdous
+  307 			262.10 hazerdous
+  308 			262.29 hazerdous
+  309 			262.49 hazerdous
+  310 			262.69 hazerdous
+  311 			262.88 hazerdous
+  312 			263.08 hazerdous
+  313 			263.27 hazerdous
+  314 			263.47 hazerdous
+  315 			263.67 hazerdous
+  316 			263.86 hazerdous
+  317 			264.06 hazerdous
+  318 			264.26 hazerdous
+  319 			264.45 hazerdous
+  320 			264.65 hazerdous
+  321 			264.85 hazerdous
+  322 			265.04 hazerdous
+  323 			265.24 hazerdous
+  324 			265.43 hazerdous
+  325 			265.63 hazerdous
+  326 			265.83 hazerdous
+  327 			266.02 hazerdous
+  328 			266.22 hazerdous
+  329 			266.42 hazerdous
+	. . .
